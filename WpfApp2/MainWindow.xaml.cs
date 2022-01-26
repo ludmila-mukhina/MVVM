@@ -20,12 +20,12 @@ namespace WpfApp2
     /// </summary>
     public partial class MainWindow : Window
     {
-        ViewModel VM = new ViewModel();
+        ViewModel VM = new ViewModel(); // объект для работы с VievModel
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = VM;
-            CommandBindings.Add(VM.bind);
+            DataContext = VM;  // добавление объекта VievModel в ресурсы страницы
+            CommandBindings.Add(VM.bind);  // добавление объекта привязки на страницу
 
         }
 
